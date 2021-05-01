@@ -536,6 +536,9 @@ a:hover .wave {
   .footer__content-arrow p {
     display: block; }
 
+button:hover .wave {
+  top: 0; }
+
 span {
   position: relative;
   z-index: 1; }
@@ -612,9 +615,6 @@ span {
   100% {
     background-position-x: 118px; } }
 
-button:hover .wave {
-  top: 0; }
-
 .projects__filter {
   padding-bottom: 4%; }
 
@@ -663,6 +663,27 @@ button:hover .wave {
     background: #3a388b;
     box-shadow: 0 0 10px #3a388b, 0 0 40px #3a388b;
     cursor: pointer; }
+
+.total-projects {
+  margin-bottom: 4%;
+  color: #3a388b;
+  display: block;
+  font-size: 25px;
+  text-align: center; }
+  .total-projects p {
+    font-size: 1.8rem; }
+
+.total-projects a {
+  animation: animateAncord 2s linear infinite;
+  text-decoration: none; }
+
+@keyframes animateAncord {
+  0%, 80% {
+    color: #DBEDF3;
+    text-shadow: none; }
+  100% {
+    color: #6f17d3;
+    text-shadow: 0 0 10px #6f17d3, 0 0 20px #6f17d3, 0 0 40px #6f17d3; } }
 
 @media (max-width: 767px) {
   header {

@@ -8,6 +8,8 @@ const personalCards = document.querySelector('.personal-section');
 const menu = document.querySelector('.menu-mobile');
 const test = document.querySelector('body');
 const menu1 = document.querySelector( ".menuppal" )
+
+//parallax
 window.addEventListener('scroll', () => {
   const value = window.scrollY;
   heaven.style.left = value * 0.2 + 'px';
@@ -15,7 +17,7 @@ window.addEventListener('scroll', () => {
   text2.style.paddingLeft = value * 0.8 + 'px';
 });
 
-
+//filter
 function jsFilter(){
   htmlCards.style.display = "none";
   jsCards.style.display = "grid";
@@ -47,7 +49,7 @@ filter.addEventListener('click',(e)=>{
 )
 
 
-// method
+// dont scroll when menu is open
 function toggleMenu (event) {
   event.preventDefault();
   this.classList.toggle('is-active');
@@ -60,3 +62,38 @@ function toggleMenu (event) {
 }
 menu.addEventListener('click', toggleMenu, false);
 
+
+//github data
+
+const UserUrl = "https://api.github.com/users/JLedezmaC";
+const GithubData = () => {
+  fetch(UserUrl, {
+    method: "GET"
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok " + response.status);
+      }
+
+      return response.json();
+    })
+    .then((data) => {
+      addData(data)
+    })
+    .catch((error) => {
+      console.log("error", error);
+    });
+};
+
+GithubData();
+
+function addData(data){
+  const TotalProyects = document.querySelector(".total-projects a")
+  TotalProyects.innerHTML = `${data.public_repos}`;
+  formulario.addEventListener("submit",()=>{
+    formulario.elements[0].value = "";
+    formulario.elements[1].value = "";
+    formulario.elements[2].value = "";
+    formulario.elements[3].value = "";
+  });
+}

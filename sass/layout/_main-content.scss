@@ -1,3 +1,7 @@
+button:hover .wave{
+  top: 0;
+}
+
 span{
   position: relative;
   z-index: 1;
@@ -82,10 +86,6 @@ span{
     background-position-x: 118px ;
   }
 }
-button:hover .wave{
-  top: 0;
-}
-
 .projects__filter{
   padding-bottom: 4%;
 }
@@ -140,5 +140,35 @@ button:hover .wave{
     background: #3a388b;
     box-shadow: 0 0 10px #3a388b, 0 0 40px #3a388b;
     cursor: pointer;
+  }
+}
+
+.total-projects{
+  margin-bottom: 4%;
+  color:#3a388b;
+  display: block;
+  font-size: 25px;
+  text-align: center;
+  p{
+    font-size: 1.8rem;
+  }
+}
+
+.total-projects a{
+  animation: animateAncord 2s linear infinite;
+  text-decoration: none;
+}
+
+@keyframes animateAncord
+{
+  0%,80%{
+    color:$white-font;
+    text-shadow: none;
+  }
+  100%{
+    color: $project-color;
+    text-shadow: 0 0 10px $project-color,
+                0 0 20px $project-color,
+                0 0 40px  $project-color;
   }
 }
