@@ -1,0 +1,207 @@
+@media(max-width:767px){
+  header{
+    width: 100%;
+  }
+  nav{
+    ul{
+      display: block;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    li:not(:last-child) {
+      margin-right: 0 ;
+    }
+    a{
+      display: inline-block;
+    }
+  }
+  .about-me {
+    display: block;
+    justify-content: unset;
+  }
+
+  .about-me--title{
+    width: 95%;
+    margin-left: 4%;
+  }
+  .projects__title h2 {
+    margin-top: 0;
+  }
+  .slider{
+    background-image: url(../../img/mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+  .slider__heaven{
+    display: none;
+  }
+
+  .slider__mountain{
+    display: none;
+  }
+
+  .slider__person{
+    display: none;
+  }
+
+  .slider__moon{
+    display: none;
+  }
+
+  .grid{
+    width: 38rem;
+  }
+
+  .projects__filter{
+    button + button{
+      margin-left: 4%;
+    }
+  }
+
+  .contact__me {
+    padding-top: 36%;
+  }
+  .contact__me--form{
+    width: 100%;
+    float: unset;
+    .form-button{
+      text-align: center;
+    }
+    h2{
+      padding-top: 20%;
+    }
+    button{
+      margin-left: 0;
+    }
+    textarea{
+      width: 95%;
+    }
+    input{
+      width: 95%;
+    }
+  }
+
+  .contact-me--map{
+    width: unset;
+    float: none;
+    padding-top: 2%;
+    img{
+      max-width: 100%;
+    }
+  }
+
+  .footer__content-arrow{
+    display: block;
+    justify-content: unset;
+  }
+  //hamburguer menu
+  .menu-mobile{
+    display: block;
+  }
+  .menu-mobile{
+    background-color: transparent;
+    position: absolute;
+    cursor:pointer;
+    height:30px;
+    right: 5%;
+    top: 6%;
+    width:30px;
+    padding:20px 20px;
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index:1002;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+  }
+  .menu-mobile.is-active{
+    background-color:none;
+  }
+  .layer{
+    background:#2fe4aa;
+    border-radius:2px;
+    height:4px;
+    margin-bottom:4px;
+    width:28px;
+    opacity:1;
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  }
+  .menu-mobile:hover .top{
+    -webkit-transform:translateY(-100%);
+    -ms-transform:translateY(-100%);
+    transform:translateY(-100%);
+  }
+  .menu-mobile:hover .bottom{
+    -webkit-transform:translateY(100%);
+    -ms-transform:translateY(100%);
+    transform:translateY(100%);
+    }
+  .menu-mobile.is-active .top{
+    -webkit-transform:translateY(200%) rotate(45deg) !important;
+    -ms-transform:translateY(200%) rotate(45deg) !important;
+    transform:translateY(200%) rotate(45deg) !important;
+  }
+  .menu-mobile.is-active .mid{
+    opacity:0;
+  }
+  .menu-mobile.is-active .bottom{
+    -webkit-transform:translateY(-200%) rotate(135deg) !important;
+    -ms-transform:translateY(-200%) rotate(135deg) !important;
+    transform:translateY(-200%) rotate(135deg) !important;
+  }
+
+  .menuppal.is_active{
+    transform: translate3d(0px, 0px, 0px);
+  }
+  .menuppal{
+    background-color: rgba(85, 85, 79, 0.4);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    overflow-y: hidden;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+  }
+
+  .menuppal ul li {
+    color: white;
+    font-size: 2.5rem;
+    font-weight:bold;
+    height:4rem;
+    list-style: none;
+    padding-right: 8%;
+    padding-left: 11%;
+    text-transform:none;
+  }
+
+  .menuppal ul li:nth-child(1){
+    padding-top: 19%;
+  }
+
+  .menuppal ul li a{
+    border-radius: unset;
+    text-decoration:none;
+  }
+
+  .menuppal ul li a:hover{
+    color:white;
+    text-decoration:none;
+  }
+
+  .menu li{
+    float: none;
+    margin-left:0%
+  }
+}

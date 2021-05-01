@@ -1,0 +1,34 @@
+// Paleta de color
+$black-transparent: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$blue: #283149;
+$gray-blue: #05496a;
+$light-red: #64111d;
+$white: #DBEDF3;
+
+//Fonts-size
+$headline-one: 5rem;
+$headline-three: 2.5rem;
+$headline-two: 2.125rem;
+$principal-paragraph:1.375rem;
+$secondary-paragraph: 1.125rem;
+$third-paragraph: 1rem;
+
+// espaciados
+$small-space-same-topic:1.25rem;
+$small-space-diferent-topic:2.875rem;
+
+// bordes
+$border-images: 10px;
+$border-input: 5px;
+
+// Variables de Colores
+$background-blue: $blue;
+$specific-background: $gray-blue;
+$background-red: $light-red;
+$white-font: $white;
+
+//breakpoints
+$mobile: 375px;
+$tablet: 768px;
+$mini-desktop: 1200px;
+$desktop: 1400px;

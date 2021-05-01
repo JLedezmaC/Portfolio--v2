@@ -1,0 +1,27 @@
+// Normalize
+@import "library/normalize";
+
+// Helpers: Herramientas utiles
+@import "helpers/variables";
+@import "helpers/functions";
+
+// Configuraciones de estilos globales
+@import "config/global";
+
+
+//components
+@import"components/tabs";
+
+//layout
+@import"layout/header";
+@import"layout/footer";
+@import"layout/main-content";
+
+
+//partials
+@import "partials/mobile";
+
+
+
+
+
