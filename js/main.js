@@ -8,6 +8,7 @@ const personalCards = document.querySelector('.personal-section');
 const menu = document.querySelector('.menu-mobile');
 const test = document.querySelector('body');
 const menu1 = document.querySelector( ".menuppal" )
+const formulario = document.querySelector('.contact__me--form form');
 
 //parallax
 window.addEventListener('scroll', () => {
@@ -45,8 +46,7 @@ filter.addEventListener('click',(e)=>{
   }else{
     personalFilter();
   }
-  }
-)
+})
 
 
 // dont scroll when menu is open
