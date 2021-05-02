@@ -6,10 +6,9 @@ const htmlCards = document.querySelector('.html-section');
 const jsCards = document.querySelector('.JS-section');
 const personalCards = document.querySelector('.personal-section');
 const menu = document.querySelector('.menu-mobile');
-const test = document.querySelector('body');
+const body = document.querySelector('body');
 const menu1 = document.querySelector( ".menuppal" )
 const formulario = document.querySelector('.contact__me--form form');
-
 //parallax
 window.addEventListener('scroll', () => {
   const value = window.scrollY;
@@ -55,9 +54,9 @@ function toggleMenu (event) {
   this.classList.toggle('is-active');
   menu1.classList.toggle("is_active");
   if(menu1.classList.contains('is_active')){
-    test.style.overflowY='hidden'
+    body.style.overflowY='hidden'
   }else{
-    test.style.overflowY='unset'
+    body.style.overflowY='unset'
   }
 }
 menu.addEventListener('click', toggleMenu, false);
