@@ -50,15 +50,16 @@ filter.addEventListener('click', (e) => {
 // dont scroll when menu is open
 function toggleMenu(event) {
   event.preventDefault();
-  this.classList.toggle('is-active');
+  menu.classList.toggle('is-active');
   menu1.classList.toggle('is_active');
-  if (menu1.classList.contains('is_active')) {
-    body.style.overflowY = 'hidden';
-  } else {
-    body.style.overflowY = 'unset';
-  }
 }
 menu.addEventListener('click', toggleMenu, false);
+
+menu1.addEventListener('click', (e) => {
+  if(e.target === "li")
+  menu.classList.remove('is-active');
+  menu1.classList.remove('is_active');
+})
 
 // github data
 

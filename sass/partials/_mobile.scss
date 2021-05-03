@@ -119,9 +119,6 @@
     -ms-user-select:none;
     user-select:none
   }
-  .menu-mobile.is-active{
-    background-color:none;
-  }
   .layer{
     background:#2fe4aa;
     border-radius:2px;
@@ -134,6 +131,7 @@
     -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
     transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
   }
+  /*
   .menu-mobile:hover .top{
     -webkit-transform:translateY(-100%);
     -ms-transform:translateY(-100%);
@@ -157,7 +155,7 @@
     -ms-transform:translateY(-200%) rotate(135deg) !important;
     transform:translateY(-200%) rotate(135deg) !important;
   }
-
+  */
   .menuppal.is_active{
     transform: translate3d(0px, 0px, 0px);
   }
