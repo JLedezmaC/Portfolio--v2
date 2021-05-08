@@ -697,6 +697,14 @@ span {
     margin-right: 0; }
   nav a {
     display: inline-block; }
+  .projects__filter button {
+    font-size: 1rem; }
+  .about-me-image {
+    padding-bottom: 40%; }
+  .slider__text {
+    font-size: 1.5rem; }
+  .slider__text2 {
+    font-size: 1.125rem; }
   .about-me {
     display: block;
     justify-content: unset; }
@@ -719,9 +727,10 @@ span {
   .slider__moon {
     display: none; }
   .grid {
-    width: 38rem; }
+    width: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(23.5rem, 1fr)); }
   .projects__filter button + button {
-    margin-left: 4%; }
+    margin-left: 0%; }
   .contact__me {
     padding-top: 36%; }
   .contact__me--form {
@@ -730,7 +739,7 @@ span {
     .contact__me--form .form-button {
       text-align: center; }
     .contact__me--form h2 {
-      padding-top: 20%; }
+      padding-top: 40%; }
     .contact__me--form button {
       margin-left: 0; }
     .contact__me--form textarea {
@@ -754,7 +763,7 @@ span {
     cursor: pointer;
     height: 30px;
     right: 5%;
-    top: 6%;
+    top: 12%;
     width: 30px;
     padding: 20px 20px;
     -webkit-transform: translate3d(0, 0, 0);

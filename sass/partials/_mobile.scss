@@ -16,6 +16,20 @@
       display: inline-block;
     }
   }
+
+  .projects__filter button{
+    font-size: 1rem;
+  }
+
+  .about-me-image{
+    padding-bottom: 40%;
+  }
+  .slider__text{
+    font-size: 1.5rem;
+  }
+  .slider__text2{
+    font-size: 1.125rem;
+  }
   .about-me {
     display: block;
     justify-content: unset;
@@ -51,12 +65,13 @@
   }
 
   .grid{
-    width: 38rem;
+    width: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(23.5rem, 1fr));
   }
 
   .projects__filter{
     button + button{
-      margin-left: 4%;
+      margin-left: 0%;
     }
   }
 
@@ -70,7 +85,7 @@
       text-align: center;
     }
     h2{
-      padding-top: 20%;
+      padding-top: 40%;
     }
     button{
       margin-left: 0;
@@ -106,7 +121,7 @@
     cursor:pointer;
     height:30px;
     right: 5%;
-    top: 6%;
+    top: 12%;
     width:30px;
     padding:20px 20px;
     -webkit-transform:translate3d(0, 0, 0);
