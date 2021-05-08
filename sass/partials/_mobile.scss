@@ -65,8 +65,8 @@
   }
 
   .grid{
-    width: 20rem;
-    grid-template-columns: repeat(auto-fit, minmax(23.5rem, 1fr));
+    width:26rem;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
   }
 
   .projects__filter{
